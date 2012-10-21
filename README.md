@@ -28,10 +28,37 @@ ruby ./utilities/extract-business-abbreviations.rb
 
 #### Output ####
 
-Tab-separated list
+Tab-separated list in './references/business-abbreviations.tsv'
 
 * First element: Common presentation
 * Second element: USPS Standard abbreviation
 
+### extract-state-abbreviations.rb ###
 
+Extract state abbreviations, geographical directionals and military state abbreviations from the [USPS page of state abbreviations](http://pe.usps.com/text/pub28/28apb.htm).
+
+Note: There are errors in the web version of the page that are corrected in the local copy.
+
+#### To run ####
+
+ruby ./utilities/extract-state-abbreviations.rb 
+
+#### Output ####
+
+Tab-separated lists
+
+State abbreviations - './references/state-abbreviations.tsv'
+
+* First element: Full state name
+* Second element: USPS Standard abbreviation
+
+Geographic directional abbreviations - './references/geographic-directionals-abbreviations.tsv'
+
+* First element: Geographic Directional
+* Second element: USPS Standard abbreviation
+
+Military 'state' abbreviations - './references/military-states-abbreviations.tsv'
+
+* First element: Military 'state'
+* Second element: USPS Standard abbreviation
 

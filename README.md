@@ -37,7 +37,7 @@ Tab-separated list in './references/business-abbreviations.tsv'
 
 Extract state abbreviations, geographical directionals and military state abbreviations from the [USPS page of state abbreviations](http://pe.usps.com/text/pub28/28apb.htm).
 
-Note: There are errors in the web version of the page that are corrected in the local copy.
+Note: There are HTML markup errors in the web version of the page that are corrected in the local copy.
 
 #### To run ####
 
@@ -60,5 +60,22 @@ Geographic directional abbreviations - './references/geographic-directionals-abb
 Military 'state' abbreviations - './references/military-states-abbreviations.tsv'
 
 * First element: Military 'state'
+* Second element: USPS Standard abbreviation
+
+### extract-street-suffix-abbreviations.rb ###
+
+Extract street suffix abbreviations from the [USPS page of street suffix abbreviations](http://pe.usps.com/text/pub28/28apc_002.htm).
+
+Note: There are HTML markup errors in the web version of the page that are corrected in the local copy.
+
+#### To run ####
+
+ruby ./utilities/extract-street-suffix-abbreviations.rb 
+
+#### Output ####
+
+Tab-separated list in './references/street-suffix-abbreviations.tsv'
+
+* First element: Common presentation
 * Second element: USPS Standard abbreviation
 

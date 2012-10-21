@@ -2,17 +2,15 @@
 # Utility to extract state abbreviations from the USPS web page at http://pe.usps.com/text/pub28/28apb.htm
 
 # Must be run from the top-level directory of the distribution
-# e.g. ruby ./utilities/extract_state_abbreviations.rb > [output-file]
-
+# e.g. ruby ./utilities/extract_state_abbreviations.rb
+# Outputs: tab-separated lists in '.references/state-abbreviations.tsv',references/geographic-directionals-abbreviations.tsv', 'references/military-states-abbreviations.tsv'
+#
 # Dependencies
 # 
 # Ruby >= 1.9.1
 # hpricot >= 0.8.6
 #
 require 'hpricot'
-
-# ID of HTML table containing abbreviations 
-MAIN_TABLE_ELEMENT_ID = 'ep574329'
 
 # File name of HTML content from http://pe.usps.com/text/pub28/28apg.htm
 SOURCE_FILE_NAME = 'references/USPS-Publication28-StateAbbreviations.html'

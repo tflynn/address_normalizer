@@ -79,3 +79,17 @@ Tab-separated list in './references/street-suffix-abbreviations.tsv'
 * First element: Common presentation
 * Second element: USPS Standard abbreviation
 
+### extract-secondary-unit-designator-abbreviations.rb ###
+
+Extract secondary unit designator abbreviations from the [USPS page of secondary unit designator abbreviations](http://pe.usps.com/text/pub28/28apc_003.htm).
+
+#### To run ####
+
+ruby ./utilities/extract-secondary-unit-designator-abbreviations.rb 
+
+#### Output ####
+
+Tab-separated list in './references/secondary-unit-designator-abbreviations.tsv'
+
+* First element: Common presentation
+* Second element: USPS Standard abbreviation
